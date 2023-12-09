@@ -298,7 +298,7 @@ public class PRESENTACION extends javax.swing.JFrame {
          try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONSPRESENTACION");
             
@@ -337,7 +337,7 @@ public class PRESENTACION extends javax.swing.JFrame {
                 t1.setText("");
                 t2.setText("");
                 Connection con;
-                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
                 Statement stmt=con.createStatement();
                 ResultSet rs=stmt.executeQuery("EXEC ACTPRESENTACION '"+ var1+"','"+ var2 + "'");
 
@@ -375,7 +375,7 @@ public class PRESENTACION extends javax.swing.JFrame {
                      
                      
                 Connection con;
-                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
                 Statement stmt=con.createStatement();
                 ResultSet rs=stmt.executeQuery("EXEC ELIMPRESENTACION '"+op+"'");
                 
@@ -411,7 +411,7 @@ public class PRESENTACION extends javax.swing.JFrame {
                 t1.setText("");
                 t2.setText("");
                 Connection con;
-                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
                 Statement stmt=con.createStatement();
                 ResultSet rs=stmt.executeQuery("EXEC INGPRESENTACION 'X"+ "','"+ var2 + "'");
 
@@ -430,7 +430,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("- - - - - - - - - - - - - - - ")){
                 DefaultTableModel tabla=new DefaultTableModel();
                 Connection con;
-                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+                con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
                 Statement stmt=con.createStatement();
                 ResultSet rs=stmt.executeQuery("EXEC BSPRESENTACION '" +jTextField1.getText()+"'");
 
@@ -450,7 +450,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("CLAVE FARMACEÚTICO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS11 '" +jTextField1.getText()+"'");
             
@@ -480,7 +480,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE FAR")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS12 '" +jTextField1.getText()+"'");
             
@@ -508,7 +508,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("HORARIO FAR")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS13 '" +jTextField1.getText()+"'");
             
@@ -538,7 +538,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("CLAVE EMPLEADO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS21 '" +jTextField1.getText()+"'");
             
@@ -567,7 +567,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE EMP")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS22 '" +jTextField1.getText()+"'");
             
@@ -594,7 +594,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("PUESTO EMP")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS23 '" +jTextField1.getText()+"'");
             
@@ -621,7 +621,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("HORARIO EMP")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS24 '" +jTextField1.getText()+"'");
             
@@ -648,7 +648,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE FARMACIA")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS31 '" +jTextField1.getText()+"'");
             
@@ -670,7 +670,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("TIPO DE TELÉFONO FAR")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS32 '" +jTextField1.getText()+"'");
             
@@ -692,7 +692,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE EMPLEADO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS41 '" +jTextField1.getText()+"'");
             
@@ -715,7 +715,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("TIPO DE TELÉFONO EMP")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS42 '" +jTextField1.getText()+"'");
             
@@ -738,7 +738,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE FARMACEÚTICO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS51 '" +jTextField1.getText()+"'");
             
@@ -769,7 +769,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE DE FARMACIA")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS52 '" +jTextField1.getText()+"'");
             
@@ -800,7 +800,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE MEDICAMENTO -")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS61 '" +jTextField1.getText()+"'");
             
@@ -820,7 +820,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE DE MONODROGA")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS62 '" +jTextField1.getText()+"'");
             
@@ -840,7 +840,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE MEDICAMENTO +")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS71 '" +jTextField1.getText()+"'");
             
@@ -861,7 +861,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE DE LABORATORIO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS72 '" +jTextField1.getText()+"'");
             
@@ -882,7 +882,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("ACCION TERAPEUTICA")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS73 '" +jTextField1.getText()+"'");
             
@@ -903,7 +903,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE MEDICAMENTO ¿")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS81 '" +jTextField1.getText()+"'");
             
@@ -928,7 +928,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("TIPO DE PRESENTACION")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS82 '" +jTextField1.getText()+"'");
             
@@ -953,7 +953,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("NOMBRE DE FARMACIA")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS83 '" +jTextField1.getText()+"'");
             
@@ -978,7 +978,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("FOLIO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS84 '" +jTextField1.getText()+"'");
             
@@ -1003,7 +1003,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("PRECIO Y NOMBRE DE MEDICAMENTO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS85 '" +jTextField1.getText()+"','"+jTextField2.getText()+"'");
             
@@ -1027,7 +1027,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         if (op.equals("STOCK Y NOMBRE DE MEDICAMENTO")){
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC BUS86 '" +jTextField1.getText()+"','"+jTextField2.getText()+"'");
             
@@ -1118,7 +1118,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONFD");
 
@@ -1152,7 +1152,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC2");
 
@@ -1185,7 +1185,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC3");
 
@@ -1212,7 +1212,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC4");
 
@@ -1240,7 +1240,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC5");
 
@@ -1276,7 +1276,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC6");
 
@@ -1302,7 +1302,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC7");
 
@@ -1328,7 +1328,7 @@ public class PRESENTACION extends javax.swing.JFrame {
         try{
             DefaultTableModel tabla=new DefaultTableModel();
             Connection con;
-            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEBRIAN; user=sa; password=sasa;");
+            con= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=BASEJORGE; user=sa; password=sasa;");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("EXEC CONC8");
 

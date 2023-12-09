@@ -92,7 +92,7 @@ public class Login extends javax.swing.JFrame {
         con=jPasswordField1.getText().toString();
         us=jTextField1.getText().toString();
         
-        if (con.equals("contrabrian") && (us.equals("Brian"))){
+        if (con.equals("CONTRA") && (us.equals("JAYCITY"))){
             MENU frame = new MENU ();
             this.setVisible (false);
             frame.setVisible(true);
